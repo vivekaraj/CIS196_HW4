@@ -1,0 +1,18 @@
+<%= form_for(@jobseeker) do |f| %>
+	<div class="field">
+		<p>Name</p>
+		<%= f.text_field :name%>
+	</div>
+	<div class="field">
+		<p>Job Category</p>
+		<%= f.text_field :category%>
+	</div>
+	<div class="field">
+		<p>Email</p>
+		<%= f.text_field :email%>
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+	<p> <%=link_to "Go to home page", root_path %> </p>
+<% end %>
