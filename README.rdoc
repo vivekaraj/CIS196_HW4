@@ -1,7 +1,19 @@
 Vivek A. Raj, CIS196 HW4
 
+HW4:
+
 Heroku: http://evening-basin-8647.herokuapp.com/
 
 Issues: No major issues except typos. Had issues with the fact that sometimes I needed to pluralize to refer to the controller and other times I needed to singularize to refer to the model. Otherwise, very smooth.
 
 What I did: I create 2 tables, employeers (4 columns: name (string), job category (string), company (string), and email (string)) and jobseekers (3 columns: name (string), job category (string), and email (string)). I made it so that employers and jobseekers had a one-to-one relationship for the purposes of this site.
+
+-------------------------------------------------------------------------------------------------------
+
+HW5:
+Heroku: http://evening-basin-8647.herokuapp.com/
+
+Issues: No major issues except I had to google to figure out how to get delete to work in heroku. Also minor syntax errors such as forgetting "<"s.
+
+What I did: added edit, show, and delete functionality to my tables. Made it so that you can access each of these links on the index page of these tables.
+
