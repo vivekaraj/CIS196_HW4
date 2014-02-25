@@ -1,0 +1,9 @@
+<div>
+	<h2><%= @employee.name %></h2>
+	<p><%= @employee.category %></p>
+	<p><%= @employee.company %></p>
+	<p><%= @employee.email %></p>
+	<p> <%=link_to "Show all employees", employees_path %> </p>
+	<p> <%=link_to "Add more employees", new_employee_path %> </p>
+	<p> <%=link_to "Go to home page", root_path %> </p>
+</div>

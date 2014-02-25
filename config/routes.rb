@@ -1,8 +1,16 @@
 Hw4::Application.routes.draw do
+  get "employees/new"
+  get "employees/index"
+  get "employees/delete"
+  get "employees/show"
   resources :jobseekers
   resources :employees
+  get "jobseekers/delete"
+  get "jobseekers/show"
+  get "employees/edit"
   get "home/index"
   root 'home#index'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

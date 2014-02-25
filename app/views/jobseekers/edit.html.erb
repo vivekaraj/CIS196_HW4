@@ -1,2 +1,17 @@
-<h1>Jobseekers#edit</h1>
-<p>Find me in app/views/jobseekers/edit.html.erb</p>
+<%= form_for(@jobseeker) do |f| %>
+	<div class="field">
+	 	<p>name</p> 
+	 	<%= f.text_field :name%>
+ 	</div>
+ 	<div class="field">
+ 		<p>category</p> 
+ 		<%= f.text_field :category%>
+ 	</div>
+ 	<div class="field">
+ 		<p>email</p> 
+ 		<%= f.text_field :email%>
+ 	</div>
+	<div class="actions">
+		<%= f.submit %>
+ 	</div>
+<% end %>

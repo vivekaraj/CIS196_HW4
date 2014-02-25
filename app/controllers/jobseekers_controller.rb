@@ -3,14 +3,34 @@ class JobseekersController < ApplicationController
   	@jobseeker = Jobseeker.new
   end
 
+  def show
+    @jobseeker = Jobseeker.find(params[:id])
+  end
+
   def index
   	@jobseekers = Jobseeker.all
   end
 
   def edit
+    @jobseeker = Jobseeker.find(params[:id])
+  end
+
+  def update
+    @jobseeker = Jobseeker.find(params[:id])
+    if @jobseeker.update_attributes(jobseeker_params)
+      redirect_to jobseeker_path(@jobseeker.id)
+    else
+      render 'edit'
+    end
   end
 
   def delete
+  end
+
+  def destroy
+    @jobseeker = Jobseeker.find(params[:id])
+    @jobseeker.destroy
+    redirect_to jobseekers_path
   end
 
   def create

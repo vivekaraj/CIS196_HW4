@@ -1,2 +1,8 @@
-<h1>Jobseekers#show</h1>
-<p>Find me in app/views/jobseekers/show.html.erb</p>
+<div>
+	<h2><%= @jobseeker.name %></h2>
+	<p><%= @jobseeker.category %></p>
+	<p><%= @jobseeker.email %></p>
+	<p> <%=link_to "Show all job seekers", jobseekers_path %> </p>
+	<p> <%=link_to "Add more jobseekers", new_jobseeker_path %> </p>
+	<p> <%=link_to "Go to home page", root_path %> </p>
+</div>

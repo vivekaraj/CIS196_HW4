@@ -6,9 +6,11 @@
 	</tr>
 	<% @jobseekers.each do |jobseeker| %>
 	<tr>
-		<td><%= jobseeker.name %></td>
+		<td><%= link_to jobseeker.name, jobseeker_path(jobseeker.id) %></td>
 		<td><%= jobseeker.category %></td>
 		<td><%= jobseeker.email %></td>
+		<td><%= link_to "edit entry", edit_jobseeker_path(jobseeker.id) %> </td>
+		<td><%= link_to "delete jobseeker", jobseeker, confirm: "are you sure you want to delete this jobseeker?", method: :delete %> </td>
 	</tr>
 	<% end %>
 </table>
