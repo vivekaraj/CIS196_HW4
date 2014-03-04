@@ -1,4 +1,5 @@
 Hw4::Application.routes.draw do
+  devise_for :employees
   get "employees/new"
   get "employees/index"
   get "employees/delete"
