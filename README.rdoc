@@ -17,3 +17,11 @@ Issues: No major issues except I had to google to figure out how to get delete t
 
 What I did: added edit, show, and delete functionality to my tables. Made it so that you can access each of these links on the index page of these tables.
 
+----------------------------------------------------------------------------------------------------------
+
+HW6:
+Heroku: http://evening-basin-8647.herokuapp.com/
+
+Issues: No major issues
+
+What I did: Used devise to allow employees to sign in
