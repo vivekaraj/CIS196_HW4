@@ -5,5 +5,7 @@ class Employee < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :jobseekers, :dependent => :destroy
-
+	validates :name, presence:true
+	validates :password, length: {minimum: 5}
+	validates :email, uniqueness: true
 end
