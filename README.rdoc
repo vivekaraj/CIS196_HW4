@@ -1,4 +1,30 @@
-Vivek A. Raj, CIS196 HW4
+Vivek A. Raj, CIS196 HW
+
+HW7:
+Heroku: http://evening-basin-8647.herokuapp.com/
+Issues: When I initially added validations, I got 2 error messages for the same problem. I then realized that Devise automatically has validations for which it would be unnecessary for me to override.
+What I did: I added validations that ensured that all names are unique (so that middle initials can be added if name is already taken), that all names are between 3 to 40 characters long, and such that names "Vivek Raj" and "Barack Obama" are reserved.
+
+
+---------------------------------------------------------------------------------
+
+HW6:
+Heroku: http://evening-basin-8647.herokuapp.com/
+
+Issues: No major issues
+
+What I did: Used devise to allow employees to sign in
+
+----------------------------------------------------------------------------------------------------------
+
+HW5:
+Heroku: http://evening-basin-8647.herokuapp.com/
+
+Issues: No major issues except I had to google to figure out how to get delete to work in heroku. Also minor syntax errors such as forgetting "<"s.
+
+What I did: added edit, show, and delete functionality to my tables. Made it so that you can access each of these links on the index page of these tables.
+
+-------------------------------------------------------------------------------------------------------
 
 HW4:
 
@@ -8,20 +34,5 @@ Issues: No major issues except typos. Had issues with the fact that sometimes I 
 
 What I did: I create 2 tables, employeers (4 columns: name (string), job category (string), company (string), and email (string)) and jobseekers (3 columns: name (string), job category (string), and email (string)). I made it so that employers and jobseekers had a one-to-one relationship for the purposes of this site.
 
--------------------------------------------------------------------------------------------------------
-
-HW5:
-Heroku: http://evening-basin-8647.herokuapp.com/
-
-Issues: No major issues except I had to google to figure out how to get delete to work in heroku. Also minor syntax errors such as forgetting "<"s.
-
-What I did: added edit, show, and delete functionality to my tables. Made it so that you can access each of these links on the index page of these tables.
-
 ----------------------------------------------------------------------------------------------------------
 
-HW6:
-Heroku: http://evening-basin-8647.herokuapp.com/
-
-Issues: No major issues
-
-What I did: Used devise to allow employees to sign in
