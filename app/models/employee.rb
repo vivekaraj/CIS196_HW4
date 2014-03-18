@@ -6,6 +6,6 @@ class Employee < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :jobseekers, :dependent => :destroy
 	validates :name, presence:true
-	validates :password, length: {minimum: 5}
-	validates :email, uniqueness: true
+	validates :name, length: {within: 3..40}
+	validates :name, uniqueness:true
 end
