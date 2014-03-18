@@ -5,7 +5,7 @@ class Employee < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :jobseekers, :dependent => :destroy
-	validates :name, presence:true
 	validates :name, length: {within: 3..40}
 	validates :name, uniqueness:true
+	validates :name, exclusion: { in: ['Vivek Raj', 'Barack Obama'], message: "%{value} is reserved"}
 end
