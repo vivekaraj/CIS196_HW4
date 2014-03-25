@@ -85,4 +85,7 @@ Hw4::Application.configure do
     :password => ENV['SENDGRID_PASSWORD'],
     :domain => ENV['SENDGRID_DOMAIN']
   }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
 end
