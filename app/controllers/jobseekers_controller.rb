@@ -36,6 +36,7 @@ class JobseekersController < ApplicationController
   def create
   	@jobseeker = Jobseeker.new(jobseeker_params)
   	if @jobseeker.save
+      Notifications.jobseeker(@jobseeker).deliver
   		redirect_to jobseekers_path
 	else
 		render 'new'

@@ -6,7 +6,7 @@ class Notifications < ActionMailer::Base
   #
   #   en.notifications.new_employee.subject
   #
-  def new_employee(employee)
+  def jobseeker(employee)
     @greeting = "Hi! You are officially a new employee!"
     @commenter = employee.name
     mail to: employee.email
