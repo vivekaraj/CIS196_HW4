@@ -1,5 +1,12 @@
 Vivek A. Raj, CIS196 HW
 
+HW8:
+Heroku: http://evening-basin-8647.herokuapp.com/
+Issue: My project is working on the local server but not the Heroku server. Still figuring out why this is the case.
+What I did: When a jobseeker is created by the user, the jobseeker receives an email that he's been added to the site.
+
+-----------------------------------------------------------------------------------
+
 HW7:
 Heroku: http://evening-basin-8647.herokuapp.com/
 Issues: When I initially added validations, I got 2 error messages for the same problem. I then realized that Devise automatically has validations for which it would be unnecessary for me to override.
