@@ -77,4 +77,12 @@ Hw4::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  config.action_mailer.default_url_options = {host: 'http://evening-basin-8647.herokuapp.com/employees/sign_in'}
+  config.action_mailer.smpt_settings = {
+    :address => 'smtp.sendgrid.net',
+    :port => '587',
+    :username => ENV['SENDGRID_USERNAME']
+    :password => ENV['SENDGRID_PASSWORD']
+    :domain => ENV['SENDGRID_DOMAIN']
+  }
 end
