@@ -6,9 +6,7 @@ class Notifications < ActionMailer::Base
   #
   #   en.notifications.new_comment.subject
   #
-  def new_comment
-    @greeting = "Hi"
-    @commenter = user.name
-    mail to: "vivekraj@wharton.upenn.edu"
+  def new_comment(employee)
+    mail to: employee.email
   end
 end
