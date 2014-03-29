@@ -36,7 +36,6 @@ class EmployeesController < ApplicationController
   def create
     @employee = Employee.new(employee_params)
     if @employee.save
-      Notifications.new_employee(@employee).deliver
       redirect_to employees_path
   else
     render 'new'
