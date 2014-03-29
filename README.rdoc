@@ -2,7 +2,7 @@ Vivek A. Raj, CIS196 HW
 
 HW8:
 Heroku: http://evening-basin-8647.herokuapp.com/
-Issue: My project is working on the local server but not the Heroku server. Still figuring out why this is the case.
+Issue: My project is working on the local server but not the Heroku server. This was due to a small typo.
 What I did: When a jobseeker is created by the user, the jobseeker receives an email that he's been added to the site.
 
 -----------------------------------------------------------------------------------
