@@ -1,4 +1,8 @@
 Hw4::Application.routes.draw do
+  get "jobseekers/edit"
+  get "jobseekers/index"
+  get "jobseekers/new"
+  get "jobseekers/CSindex"
   devise_for :employees
   get "employees/new"
   get "employees/index"

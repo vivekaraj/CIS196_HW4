@@ -4,7 +4,7 @@ class EmployeesController < ApplicationController
   end
 
   def index
-    @employees = Employee.all
+    @employees = Employee.all.order(:name)
   end
 
   def show

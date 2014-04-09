@@ -1,6 +1,6 @@
 class JobseekersController < ApplicationController
   def new
-  	@jobseeker = Jobseeker.new
+    @jobseeker = Jobseeker.new
   end
 
   def show
@@ -8,7 +8,11 @@ class JobseekersController < ApplicationController
   end
 
   def index
-  	@jobseekers = Jobseeker.all
+    @jobseekers = Jobseeker.all.order(:category).limit(5)
+  end
+
+  def CSindex
+    @jobseekers = Jobseeker.where(category: "Computer Software")
   end
 
   def edit
@@ -34,17 +38,17 @@ class JobseekersController < ApplicationController
   end
 
   def create
-  	@jobseeker = Jobseeker.new(jobseeker_params)
-  	if @jobseeker.save
+    @jobseeker = Jobseeker.new(jobseeker_params)
+    if @jobseeker.save
       Notifications.jobseeker(@jobseeker).deliver
-  		redirect_to jobseekers_path
-	else
-		render 'new'
-	end
+      redirect_to jobseekers_path
+  else
+    render 'new'
+  end
   end
 
   private
   def jobseeker_params
-  	params.require(:jobseeker).permit(:name, :category, :email)
+    params.require(:jobseeker).permit(:name, :category, :email)
   end
 end
