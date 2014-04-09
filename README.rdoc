@@ -1,5 +1,14 @@
 Vivek A. Raj, CIS196 HW
 
+HW9:
+Heroku: http://evening-basin-8647.herokuapp.com/
+Issue: No major issues
+What I did: Added a query in the jobseekers controller to order all jobseekers by category in "index". I also added a query in the jobseekers controller to limit the number of jobseekers displayed to 5 in "index". I also added a query in the jobseekers controller to only display jobseekers in the Computer Software category in "CSindex". I finally added a query in the employees controller to display employees in order by name in "index".
+
+
+-------------------------------------------------------------------------------------
+
+
 HW8:
 Heroku: http://evening-basin-8647.herokuapp.com/
 Issue: My project is working on the local server but not the Heroku server. This was due to a small typo.
