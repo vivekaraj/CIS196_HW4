@@ -1,10 +1,7 @@
 $(document).on("page:load", function(){
-	$(".important-paragraph").hover(function(){
-		$(".important-paragraph").css("color", "green");
+	
+	$(".btn").click( function(){
+		$(".btn").text("Thank you for the feedback!");
 	});
-	$(function() {
-		$(".btn").click( function(){
-			$(".btn").text("Thank you for the feedback!");
-		});
-	});
+
 });
