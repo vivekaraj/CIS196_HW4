@@ -4,7 +4,7 @@ $(document).on("page:load", function(){
 	});
 	$(function() {
 		$(".btn").click( function(){
-			$(".btn").text("clicked!");
+			$(".btn").text("Thank you for the feedback!");
 		});
 	});
 });
