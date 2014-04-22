@@ -1,5 +1,12 @@
 Vivek A. Raj, CIS196 HW
 
+HW10:
+Heroku: http://evening-basin-8647.herokuapp.com/
+Issue: No major issues
+What I did: Added a button on the jobseekers page for users to indicate satisfaction toward the page by clicking on a button. I plan on adding functionality to keep track of this information. 
+
+-------------------------------------------------------------------------------------
+
 HW9:
 Heroku: http://evening-basin-8647.herokuapp.com/
 Issue: No major issues
