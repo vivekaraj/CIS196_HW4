@@ -1,5 +1,25 @@
 Vivek A. Raj, CIS196 HW
 
+Final Project:
+Heroku site: http://evening-basin-8647.herokuapp.com/ 
+This app gives an easy way for employees who work in the HR department for companies to keep track of potential job seekers. 
+My app allows employees to easily register for the website and add/edit/delete potential jobseekers. 
+Gem: Devise in order to allow employees to register and sign in.
+Heroku Addon: Sendgrid to send jobseekers an email when they have been added to the site.
+Javascript function: On the jobseekers page, javascript code allows user to click a button in order to indicate he/she is satisfied with the website experience
+CSS: Used CSS to center all the text and add a background color to each page.
+Validations: All names are unique, all names are 3 to 40 characters long, and the names "Vivek Raj" and "Barack Obama" are reserved
+Scope: Added a query in the jobseekers controller to order all jobseekers by category in "index". I also added a query in the jobseekers controller to limit the number of jobseekers displayed to 5 in "index". I also added a query in the jobseekers controller to only display jobseekers in the Computer Software category in "CSindex". I finally added a query in the employees controller to display employees in order by name in "index".
+Database Structure/Resources: 2 resources: employees and jobseekers. Jobseekers belong to employees. You can create, edit, or delete either of them.
+Errors: The main issues I had were small typo errors. I had no major issues because the instructions have been very straight-forward. 
+Thank you for a great semester!
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
 HW10:
 Heroku: http://evening-basin-8647.herokuapp.com/
 Issue: No major issues
