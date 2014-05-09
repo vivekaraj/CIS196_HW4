@@ -4,7 +4,7 @@ Final Project:
 Heroku site: http://evening-basin-8647.herokuapp.com/ 
 This app gives an easy way for employees who work in the HR department for companies to keep track of potential job seekers. 
 My app allows employees to easily register for the website and add/edit/delete potential jobseekers. 
-Gem: Devise in order to allow employees to register and sign in.
+Gem: Devise in order to allow employees to register employees and sign in. (https://github.com/plataformatec/devise)
 Heroku Addon: Sendgrid to send jobseekers an email when they have been added to the site.
 Javascript function: On the jobseekers page, javascript code allows user to click a button in order to indicate he/she is satisfied with the website experience
 CSS: Used CSS to center all the text and add a background color to each page.
