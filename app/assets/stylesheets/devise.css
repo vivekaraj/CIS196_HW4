@@ -24,11 +24,27 @@ h3 {
 	padding-left: 5%;
 }
 
+
+
 body {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 40%;
 	background-color: #33FFCC;
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.53, #FFA02D),
+	color-stop(1, #E4F009),
+	color-stop(1, #E38512)
+);
+background-image: -o-linear-gradient(bottom, #FFA02D 53%, #E4F009 100%, #E38512 100%);
+background-image: -moz-linear-gradient(bottom, #FFA02D 53%, #E4F009 100%, #E38512 100%);
+background-image: -webkit-linear-gradient(bottom, #FFA02D 53%, #E4F009 100%, #E38512 100%);
+background-image: -ms-linear-gradient(bottom, #FFA02D 53%, #E4F009 100%, #E38512 100%);
+background-image: linear-gradient(to bottom, #FFA02D 53%, #E4F009 100%, #E38512 100%);
+background-size: cover;
 }
 
 html {
