@@ -1,0 +1,37 @@
+h2 {
+	font-size: 24px;
+	color: blue;	
+}
+
+div1 {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid black;
+	background: yellow;
+}
+
+div {
+	font-style: italic;
+	padding-bottom: 5px;
+	padding-left: 10%;
+
+}
+
+h3 {
+	font-weight: normal;
+	padding-left: 5%;
+}
+
+body {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 40%;
+	background-color: #33FFCC;
+}
+
+html {
+	position: relative;
+}
+
